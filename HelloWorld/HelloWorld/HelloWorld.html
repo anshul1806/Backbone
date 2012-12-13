@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link href="Content/bootstrap-responsive.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.7.2.min.js"></script>
+    <script src="Scripts/underscore.js"></script>
+    <script src="Scripts/backbone.min.js"></script>
+    <title>Hello World page</title>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            alert('hello world sample');
+            var MainNav = Backbone.Model.extend({
+                initialize: function (homeurl, homelink,contactlink) {
+                    this.set('Home',homeurl),
+                    this.set('HomeLink',homelink),
+                    this.set('Contact',contactlink)
+                },
+                mainnav: 'mainNav',
+            });
+            var navBar = new MainNav('Home',"#","ContactLink");
+            alert('Default values for the nav are ' + navBar.get('Home') + navBar.get('HomeLink') + navBar.get('Contact'));
+            /**example2 ***/
+            navBar.RaiseAlert = function (val) {
+                alert('Raising alert on' +val);
+            }
+        });
+    </script>
+
+
+
+    
+    
+    <style type="text/css">
+        .header {
+            background-color:#1292d3
+        }
+        section {
+            width:100%;
+            height:50px;
+            margin:0px;
+            border-radius:3px 4px 3px 14px;
+            background-color:#ffd800;
+            border-bottom-color: #bfd52e;
+            border-bottom-style:groove;
+        }
+    </style>
+</head>
+<body style="margin:0px; background-color:#059882">
+    <article class="container">
+        <h1 style="scrollbar-base-color:red">Hello Backbone.js</h1>
+    </article>
+    <div class="navbar">
+        <div class="navbar-inner">
+            <a class="brand" href="#">Title</a>
+            <ul class="nav">
+                <li class="active"><a href="#"><i class="icon-home"></i>&nbsp;Home</a></li>
+                <li><a href="#ex1"><i class="icon-user"></i>&nbsp;Example#1</a></li>
+                <li><a href="#"><i class="icon-user"></i>&nbsp;Contact</a></li>
+                <li><a href="#"><i class="icon-envelop"></i>&nbsp;Email Us</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <section id="ex1">
+        <aside>Example 1 creates a new model navbar and then initializes the model with few properties.</aside>
+    </section>
+    <section id="ex2">
+        <p>Example 2 adds few more properties to the model on the fly.</p>
+    </section>
+</body>
+</html>
