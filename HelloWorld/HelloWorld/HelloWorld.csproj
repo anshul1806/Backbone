@@ -64,6 +64,7 @@
     <Content Include="Content\images\glyphicons-halflings-white.png" />
     <Content Include="Content\images\glyphicons-halflings.png" />
     <Content Include="HelloWorld.html" />
+    <Content Include="HelloWorld_View.html" />
     <Content Include="packages.config" />
     <None Include="Scripts\jquery-1.7.2.intellisense.js" />
     <Content Include="Scripts\backbone.js" />
