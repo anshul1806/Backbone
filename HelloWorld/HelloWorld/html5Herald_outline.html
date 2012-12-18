@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+        summary {
+            background-color: #85c360;
+            height: 2em;
+        }
+    </style>
+
+</head>
+<body>
+    <details>
+        <summary>Some Magazines of Note</summary>
+        <ul>
+            <li><cite>Bird Watchers Digest</cite></li>
+            <li><cite>Rowers Weekly</cite></li>
+            <li><cite>Fishing Monthly</cite></li>
+        </ul>
+    </details>
+
+    <ol start="20" reversed>
+        <li>One</li>
+        <li>Two</li>
+        <li>three &</li>
+        <li>
+            <textarea></textarea></li>
+    </ol>
+    <header>
+        <hgroup>
+            <h1><mark>Web page title</mark></h1>
+            <h2>Web page sub title</h2>
+        </hgroup>
+    </header>
+    <article class="main">
+        <h1>Main Article</h1>
+        <section class="section1">
+            <h1>Section inside article</h1>
+            <h2>inside article - (h2)</h2>
+            <section class="sec2">
+                <h1>Sub section inside section</h1>
+                <h2>h2 section inside section</h2>
+                <h3>h3 section inside section</h3>
+                <h4>h4 section inside</h4>
+                <h5>h5 section inside</h5>
+                <h6>h6 section inside</h6>
+            </section>
+        </section>
+        <p>
+            Total current disk usage: <meter value="63" min="0" max="320"
+                low="10" high="300" title="gigabytes">63 GB</meter>
+            <progress draggable="true" value="100" max="200"><span>150</span>%</progress>
+    </article>
+    <article>
+        <section class="timeDemo">
+            <p>
+                We will be meeting for our next dev con on <time datetime="2011-12-12">12th oct of
+                this year</time>
+            </p>
+            <a href="#">
+                <div style="background-color: #333">this is dive inside hyper link</div>
+                <p>Another block element inside a</p>
+                <table>
+                    <tr>
+                        <td>Cell 0 </td>
+                        <td>Cell 1</td>
+                    </tr>
+                </table>
+                <section>
+                    <h3>Section inside a</h3>
+                </section>
+            </a>
+        </section>
+
+    </article>
+
+    <article>
+        <form id="register" method="post">
+            <hgroup>
+                <h1>Sign Me Up!</h1>
+                <h2>I would like to receive your fine publication.</h2>
+            </hgroup>
+            <ul>
+                <li>
+                    <label for="register-name">My name is:</label>
+                    <input type="text" id="register-name" name="name">
+                </li>
+                <li>
+                    <label for="address">My email address is:</label>
+                    <input type="text" id="address" name="address">
+                </li>
+                <li>
+                    <label for="url">My website is located at:</label>
+                    <input type="text" id="url" name="url">
+                </li>
+                <li>
+                    <label for="password">I would like my password to be:</label>
+                    <p>(at least 6 characters, no spaces)</p>
+                    <input type="password" id="password" name="password">
+                </li>
+                <li>
+                    <label for="rating">
+                        On a scale of 1 to 10, my knowledge of 
+HTML5 is:</label>
+                    <input type="text" name="rating" id='rating"'>
+                </li>
+                <li>
+                    <label for="startdate">
+                        Please start my subscription on:
+                    </label>
+                    <input type="text" id="startdate" name="startdate">
+                </li>
+                <li>
+                    <label for="quantity">
+                        I would like to receive
+                        <input
+                            type="text" name="quantity" id="quantity">
+                        copies of <cite>The HTML5 Herald</cite>.</label>
+                </li>
+                <li>
+                    <label for="upsell">
+                        Also sign me up for <cite>The CSS3 
+Chronicle</cite></label>
+                    <input type="checkbox" id="upsell" name="upsell">
+                </li>
+                <li>
+                    <input type="submit" id="register-submit" value="Send Post 
+Haste">
+                </li>
+            </ul>
+        </form>
+    </article>
+</body>
+</html>

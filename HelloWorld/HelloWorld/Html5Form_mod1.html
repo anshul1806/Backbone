@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link href="Content/bootstrap-responsive.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.7.2.min.js"></script>
+    <title></title>
+</head>
+<body>
+    <article>
+        <div class="hero-unit"><strong>HTML </strong>form demo</div>
+    </article>
+    <form action="http://google.com" method="post">
+        <ol>
+           <li>
+                <label for="uName">Email</label>
+                <input required aria-required="true" type="text" name="uName" />
+            </li>
+             <li>
+                <label for="userEmail">Email</label>
+                <input required aria-required="true" type="email" name="userEmail" placeholder="a@g.com" />
+            </li>
+            <li>
+                <label for="uPassword">Password</label>
+                <input required aria-required="true" type="password" name="uPassword" placeholder="Enter your password here"/>
+
+            </li>
+            <li>
+                <label for="subStartDate">Start Date</label>
+                <input required aria-required="true" type="date" name="subStartDate" />
+
+            </li>
+           
+        </ol>
+        <input type="submit" value="Send" />
+    </form>
+</body>
+</html>

@@ -1,0 +1,5 @@
+C:\Users\anu\Documents\GitHub\Backbone\HelloWorld\TemplatesDemo\bin\TemplatesDemo.dll
+C:\Users\anu\Documents\GitHub\Backbone\HelloWorld\TemplatesDemo\bin\TemplatesDemo.pdb
+C:\Users\anu\Documents\GitHub\Backbone\HelloWorld\TemplatesDemo\obj\Debug\TemplatesDemo.csprojResolveAssemblyReference.cache
+C:\Users\anu\Documents\GitHub\Backbone\HelloWorld\TemplatesDemo\obj\Debug\TemplatesDemo.dll
+C:\Users\anu\Documents\GitHub\Backbone\HelloWorld\TemplatesDemo\obj\Debug\TemplatesDemo.pdb

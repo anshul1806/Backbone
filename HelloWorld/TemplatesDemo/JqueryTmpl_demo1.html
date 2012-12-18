@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link href="Content/myCss.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap-responsive.min.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.8.3.min.js"></script>
+    <script src="Scripts/jQuery.tmpl.js"></script>
+    <title>Jquery templates demo</title>
+</head>
+<body>
+    <nav>
+        <div class="hero-unit btn-success">
+            <header>
+                <h1><strong>Jquery tempalate demo</strong></h1>
+            </header>
+
+        </div>
+        <div class="navbar clearfix">
+
+            <div class="navbar-inner">
+                <ul class="nav">
+                </ul>
+                <form class="navbar-form pull-right">
+                    <input type="text" class="span2">
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+        </div>
+
+    </nav>
+    <div class="container-fluid">
+        <div class="content" style="float:inherit;margin-left:0px;">Main nav is generated using tempalted UI</div>
+        <ul class="content2">
+
+        </ul>
+    </div>
+
+
+
+</body>
+   
+</html>
+<script type="text/x-jquery-tmpl" id="leftNavItems">
+   
+</script>
+
+<script>
+    var leftNavtmp = '{{each url}}  <li><a href="#">${$value}</a></li>{{/each}}';
+    var leftNav = {
+        url: ['home','contact','send email']
+    };
+    $(document).ready(function () {
+
+        $('.nav').append($.tmpl(leftNavtmp, leftNav));
+    });
+   
+
+</script>

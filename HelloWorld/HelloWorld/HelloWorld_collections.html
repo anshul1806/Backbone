@@ -1,0 +1,92 @@
+﻿<!--<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link href="Content/bootstrap-responsive.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.7.2.min.js"></script>
+    <script src="Scripts/underscore.js"></script>
+    <script src="Scripts/backbone.min.js"></script>
+    <title>Backbone js Collections demo</title>
+    <script type="text/template" id="tpl-certificate">
+      <h1>Welcome..<%= name %></h1>
+      <p><Strong>your DOB:</Strong> <%= dob %></p>
+        <p>Author : <%= author%></p>
+    </script>
+   <script>
+       $(document).ready(function () {
+           console.log('Demo for collections object.');
+           var anshul = new UserModel();
+           anshul.set('name', 'Anshul Pandey');
+           anshul.set('message', "hi board");
+           anshul.set('chatHandle', 'skyrocket');
+           anshul.set('dob', 'Jun 18,1980');
+
+           var archana = new UserModel();
+           archana.set('name', 'Archana Awasthi Pandey');
+           archana.set('message', "hi Al");
+           archana.set('chatHandle', 'RocketSing');
+           archana.set('dob', 'oct 25,1982');
+           console.info('Archana object created' + archana.get('name') + "chat handle" + archana.get('chatHandle'));
+           var loggedInUsers = new Users([anshul]);
+            
+           console.log('view object created and in memory');
+           console.warn(loggedInUsers.all);
+       });
+
+       // Step 1 : define a model 
+       UserModel = Backbone.Model.extend({
+           defaults: {
+               'name' :'user1',
+               'message' : 'User joined',
+               'chatHandle' : '',
+               dob : ''
+           }
+
+       });
+
+    // Step 2 Define a collection with model type UserModel.
+       Users = Backbone.Collection.extend({
+           model:UserModel
+       });
+
+       
+   </script>
+    <style type="text/css">
+        .placeholder {
+            background-color:#0094ff;
+            margin:0px;
+            left:0px;
+            position:relative;
+            outline:inset 5px #808080;
+        }
+    </style>
+</head>
+<body style="margin:0px;left:0px;">
+    <ul class="nav"><li><a href="HelloWorld.html">Back</a></li><li><a>next</a></li></ul>
+    <article id="view" class="hero-unit">
+      <h1>Welcome to Collections Demo</h1>
+    </article>
+
+    <article class="placeholder">
+          <p>This view is generated using Backbone View</p>
+    </article>
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<head>
+<title>Using the "To Relative Time" gallery module with YUI Node</title>
+    </head>
+<body>
+<div id="demo"></div>
+    </body>
+
+<script src="http://yui.yahooapis.com/3.5.0/build/yui/yui-min.js"></script>
+<script>
+    YUI({
+        gallery: 'gallery-2010.08.25-19-45'
+    }).use('gallery-torelativetime', 'node', function (Y) {
+        var entryTime = new Date(2010, 10, 1);
+        Y.one('#demo').setHTML(Y.toRelativeTime(entryTime));
+    });
+</script>
